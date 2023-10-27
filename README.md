@@ -1,8 +1,28 @@
-# React + Vite
+# Email Template Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Email Template Website! This project provides a user-friendly platform for sharing email templates for various purposes. Whether you need email templates for announcements, newsletters, holidays, or transactional messages, our platform has you covered.
 
-Currently, two official plugins are available:
+![Email Template Website Screenshot](email-03\src\assets\screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+
+## Features
+
+- **Browse Templates:** Explore a diverse collection of pre-designed email templates.
+- **Search Functionality:** Easily find templates by name, type, or keywords.
+- **Filter by Category:** Filter templates by categories such as announcements, newsletters, holidays, and transactional emails.
+- **Sorting Options:** Sort templates by popularity, recency, or other criteria.
+- **Customization:** Customize templates to fit your specific needs.
+- **Responsive Design:** Enjoy a responsive and user-friendly web experience.
+
+## Technologies Used
+
+- **Frontend:** [React](https://reactjs.org/)
+- **Backend:** [MirageJS](https://miragejs.com/) (for mock API)
+- **Version Control:** [Git](https://git-scm.com/)
+- **Hosting:** [GitHub Pages](https://pages.github.com/)
+
+
