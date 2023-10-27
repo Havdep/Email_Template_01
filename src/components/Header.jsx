@@ -18,10 +18,10 @@ function Header() {
             by the community, for the community
           </span>
         </h1>
-        <p className="small-text">
+        <span className="small-text">
           100s of free templates to help you craft the perfect marketing
           journey.
-        </p>
+        </span>
       </div>
     </>
   );

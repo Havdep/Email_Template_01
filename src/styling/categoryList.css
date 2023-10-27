@@ -1,0 +1,36 @@
+.card {
+    height: 284px;
+    width: 228px;
+    border-radius: 12px;
+    border: 1px solid var(--neutrals-grey-20, #E0E0E0);
+    background: var(--neutrals-white, #FFF);
+}
+
+.image {
+    width: 228px;
+    height: 228px;
+    flex-shrink: 0;
+    border-radius: 12px, 12px, 0px, 0px;
+    background: var(--neutrals-white, #FFF);
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.temp-name {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}

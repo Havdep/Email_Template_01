@@ -1,0 +1,27 @@
+.sidebar {
+    width: 284px;
+}
+
+.categories {
+    color: var(--neutrals-600, #595250);
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.labels {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+    gap: 19px;
+}
+
+.parent {
+    width: 250px
+}
