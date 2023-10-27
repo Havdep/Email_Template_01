@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { GlobalContext } from "../Context";
-import "../styling/CategoryList.css";
+import "../styling/categoryList.css";
 import SearchBar from "./SearchBar"; // Corrected component name
 
 function CategoryList() {
