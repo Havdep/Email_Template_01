@@ -2,7 +2,7 @@
 
 Welcome to the Email Template Website! This project provides a user-friendly platform for sharing email templates for various purposes. Whether you need email templates for announcements, newsletters, holidays, or transactional messages, our platform has you covered.
 
-![Email Template Website Screenshot](email-03\src\assets\screenshot.png)
+![Email Template Website Screenshot](../email-03/src/assets/screenshot.png)
 
 ## Table of Contents
 
