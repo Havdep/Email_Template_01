@@ -20,9 +20,9 @@ Welcome to the Email Template Website! This project provides a user-friendly pla
 
 ## Technologies Used
 
-- **Frontend:** [React](https://reactjs.org/)
+- **Frontend:** [ReactJS](https://reactjs.org/)
 - **Backend:** [MirageJS](https://miragejs.com/) (for mock API)
 - **Version Control:** [Git](https://git-scm.com/)
-- **Hosting:** [GitHub Pages](https://pages.github.com/)
+- **Hosting:** [Netlify](https://clever-lolly-7da972.netlify.app/)
 
 
