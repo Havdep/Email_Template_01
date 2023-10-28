@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { GlobalContext } from "../Context";
+import "../styling/searchbar.css"; // Import the CSS file
 
-const SeacrhBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
+const SearchBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
   const [sortBy, setSortBy] = useState("Recent");
   console.log(searchTerm);
   const handleSearch = (e) => {
@@ -9,58 +10,23 @@ const SeacrhBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
     onSearch(term);
   };
 
-  const styles = {
-    container: {
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      //   borderBottom: "1px solid #d1d1d1",
-      padding: "10px",
-    },
-    searchContainer: {
-      flex: "1",
-      marginRight: "20px",
-    },
-    input: {
-      width: "384px",
-      padding: "8px 12px",
-      border: "1px solid #d1d1d1",
-      borderRadius: "5px",
-      outline: "none",
-    },
-    sortContainer: {
-      display: "flex",
-      alignItems: "center",
-    },
-    label: {
-      marginRight: "8px",
-    },
-    select: {
-      padding: "8px 12px",
-      border: "1px solid #d1d1d1",
-      borderRadius: "5px",
-      outline: "none",
-      color: "#4589FF",
-    },
-  };
-
   return (
-    <div style={styles.container}>
-      <div style={styles.searchContainer}>
+    <div className="search-bar-container">
+      <div className="search-container">
         <input
-          style={styles.input}
+          className="search-input"
           type="text"
           placeholder="Search email templates"
           value={searchTerm}
           onChange={handleSearch}
         />
       </div>
-      <div style={styles.sortContainer}>
-        <label style={styles.label}>Sort by:</label>
+      <div className="sort-container">
+        <label className="sort-label">Sort by:</label>
         <select
-          style={styles.select}
+          className="sort-select"
           value={sortBy}
-          //   onChange={handleSortChange}
+          // onChange={handleSortChange}
         >
           <option value="Recent">Recent</option>
           <option value="Oldest">Oldest</option>
@@ -71,4 +37,4 @@ const SeacrhBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
   );
 };
 
-export default SeacrhBar;
+export default SearchBar;
