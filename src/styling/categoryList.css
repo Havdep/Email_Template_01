@@ -11,16 +11,19 @@
     /* flex: 1 0 0; */
     align-self: stretch;
     border-radius: 12px;
+    width: 254.7px;
     border: 1px solid var(--neutrals-grey-20, #E0E0E0);
     background: var(--neutrals-white, #FFF);
 }
 
 .card-image {
     display: flex;
-    border-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+    border-radius: ;
     width: 253px;
     height: 228px;
 }
@@ -34,6 +37,9 @@
     gap: 8px;
     flex: 1 0 0;
     align-self: stretch;
+    /* border-left: 1px solid var(--neutrals-grey-20, #E0E0E0);
+    border-right: 1px solid var(--neutrals-grey-20, #E0E0E0);
+    border-bottom: 1px solid var(--neutrals-grey-20, #E0E0E0); */
 }
 
 .card-text {
