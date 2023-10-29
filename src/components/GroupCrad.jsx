@@ -33,7 +33,7 @@ function GroupCrad() {
           <SearchBar searchTerm={search} onSearch={setSearch} />
         </div>
         {Object.keys(groupedTemplates).map((type) => (
-          <div>
+          <div className="card-type-wrap">
             <div key={type} className="card-type">
               <div>{type}</div>
             </div>

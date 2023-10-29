@@ -6,13 +6,28 @@ function CategoryList({ templates }) {
     <div className="parent">
       {templates.map((template) => (
         <div className="card" key={template.id}>
-          <img
-            src={template.imageUrl}
-            alt={template.name}
-            className="card-image"
-          />
-          <div className="text-container">
-            <div className="card-text">{template.name}</div>
+          <div className="card-front">
+            <img
+              src={template.imageUrl}
+              alt={template.name}
+              className="card-image"
+            />
+            <div className="text-container">
+              <div className="card-text">{template.name}</div>
+            </div>
+          </div>
+          <div className="card-back">
+            <img
+              src={template.imageUrl}
+              alt={template.name}
+              className="card-image-back"
+            />
+            <div>
+              <button className="button">Use this</button>
+            </div>
+            <div className="text-container-back">
+              <div className="card-text-back">{template.name}</div>
+            </div>
           </div>
         </div>
       ))}
