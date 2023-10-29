@@ -82,26 +82,35 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .roller {
-        height: 2.6rem;
-        line-height: 2.125rem;
+        line-height: 100px;
+        height: 72px;
+    }
+    .heading {
+        display: flex;
+        height: auto;
+        width: 390px;
+        padding: 64px 120px 80px 120px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(180deg, #DEFBE6 0%, rgba(222, 251, 230, 0.00) 100%);
     }
     .roller .roll-text {
         animation: slide-mob 5s infinite;
     }
     @keyframes slide-mob {
         0% {
-            top: 0;
+            top: 0px;
         }
-        25% {
-            top: -2.125rem;
+        40% {
+            top: -72px;
         }
-        50% {
-            top: -4.25rem;
+        80% {
+            top: -144px;
         }
-        72.5% {
-            top: -6.375rem;
+        90% {
+            top: 0px;
         }
     }
 }

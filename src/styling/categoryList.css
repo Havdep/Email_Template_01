@@ -130,3 +130,15 @@
     /* 133.333% */
     letter-spacing: -0.18px;
 }
+
+@media screen and (max-width: 768px) {
+    .parent {
+        /* Adjust layout for smaller screens, e.g., change flex-direction */
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        float: left;
+        perspective: 900px;
+        /* Adjust gap for better spacing on smaller screens */
+    }
+}
