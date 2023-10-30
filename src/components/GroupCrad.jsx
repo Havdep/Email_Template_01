@@ -34,12 +34,11 @@ function GroupCrad() {
         </div>
         {Object.keys(groupedTemplates).map((type) => (
           <div className="card-type-wrap">
-            <div key={type} className="card-type">
-              <div>{type}</div>
+            <div key={type}>
+              <div className="card-type">{type}</div>
             </div>
-            <div className="card">
-              <CategoryList templates={groupedTemplates[type]} />
-            </div>
+
+            <CategoryList templates={groupedTemplates[type]} />
           </div>
         ))}
         {Object.keys(groupedTemplates).length === 0 && (

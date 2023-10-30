@@ -7,8 +7,12 @@
 
 
 /* .card {
-    margin-top: 24px;
+    background-color: rgb(53, 198, 176);
 } */
+
+.card-type-wrap {
+    width: 0
+}
 
 .card-type {
     color: var(--neutrals-grey-100, #161616);
