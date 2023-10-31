@@ -7,12 +7,14 @@ function Sidebar() {
 
   const handleFilter = (filter) => {
     setFilterList((prevFilterList) => {
+      //toggle karne k liye
       if (prevFilterList.includes(filter)) {
         return prevFilterList.filter((item) => item !== filter);
       } else {
         return [...prevFilterList, filter];
       }
     });
+    console.log("filter list updated");
   };
 
   return (

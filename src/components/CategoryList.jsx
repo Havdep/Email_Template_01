@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styling/categoryList.css";
+// import { GlobalContext } from "../Context";
 
-function CategoryList({ templates }) {
+function CategoryList({ groupedTemplates, templates }) {
+  // console.log(groupedTemplates, templates);
   return (
     <div className="parent">
-      {templates.map((template) => (
+      {groupedTemplates.map((template) => (
         <div className="card" key={template.id}>
           <div className="card-front">
             <img

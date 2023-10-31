@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { GlobalContext } from "../Context";
 import "../styling/searchbar.css"; // Import the CSS file
 
-const SearchBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
-  const [sortBy, setSortBy] = useState("Recent");
-  console.log(searchTerm);
+const SearchBar = () => {
+  const { setTemplates, templates, search, setSearch, sortBy, setSortBy } =
+    useContext(GlobalContext);
+
   const handleSearch = (e) => {
     const term = e.target.value;
-    onSearch(term);
+    setSearch(term);
   };
 
   return (
@@ -17,7 +18,7 @@ const SearchBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
           className="search-input"
           type="text"
           placeholder="Search email templates"
-          value={searchTerm}
+          value={search}
           onChange={handleSearch}
         />
       </div>
@@ -26,7 +27,7 @@ const SearchBar = ({ setTemplates, templates, searchTerm, onSearch }) => {
         <select
           className="sort-select"
           value={sortBy}
-          // onChange={handleSortChange}
+          onChange={(e) => setSortBy(e.target.value)}
         >
           <option value="Recent">Recent</option>
           <option value="Oldest">Oldest</option>

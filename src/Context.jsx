@@ -8,9 +8,10 @@ const Context = ({ children }) => {
   const [filterList, setFilterList] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
+  const [sortBy, setSortBy] = useState("Recent");
 
-  makeServer();
   useEffect(() => {
+    makeServer();
     fetch("/api")
       .then((res) => res.json())
       .then((data) => {
@@ -48,6 +49,8 @@ const Context = ({ children }) => {
     setFilterList,
     search,
     setSearch,
+    sortBy,
+    setSortBy,
   };
   return (
     <GlobalContext.Provider value={value}> {children} </GlobalContext.Provider>
